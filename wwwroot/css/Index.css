@@ -1,0 +1,42 @@
+﻿.containerIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card, .card_rostos {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+    border:0;
+}
+
+.card {
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 55%, rgba(0, 212, 255, 1) 100%);
+}
+
+.card_rostos {
+    background: linear-gradient(90deg,rgba(116, 140, 171, 1) 66%, rgba(9, 9, 121, 1) 84%, rgba(0, 212, 255, 1) 100%);
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}

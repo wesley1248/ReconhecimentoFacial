@@ -4,6 +4,11 @@ namespace ReconhecimentoFacial.Controllers
 {
     public class FaceController : Controller
     {
+        public IActionResult Index()
+        {
+            return View("Index");
+        }
+
         public IActionResult Identificar()
         {
             return View();
