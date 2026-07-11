@@ -6,7 +6,7 @@
         <div class="containerTitle">
             <h6>Rostos Cadastrados</h6>
             <div>
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cameraModal">
                     <i class="fa-solid fa-user-plus"></i>&nbsp;Cadastrar
                 </button>
             </div>
@@ -18,3 +18,28 @@
     <div class="card"></div>
 
 </div>
+
+<div class="modal fade" id="cameraModal" tabindex="-1" aria-labelledby="cameraModalLabel" aria-hidden="true" data-bs-
+     backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cameraModalLabel">Escanear Rosto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="btnFecharCamera"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="camera-wrapper" style="position: relative; background: #000; border-radius: 8px; overflow: hidden;
+  aspect-ratio: 4/3;">
+                    <video id="webcam" autoplay playsinline muted style="width: 100%; height: 100%; object-fit: cover;
+  "></video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/CadastroRosto.js" asp-append-version="true"></script>
+}
